@@ -123,7 +123,7 @@ main section {
     background-color: var(--cor-fundo-e-destaque);
 }
 
-main section > div {
+main div#visualizador {
     background-color: var(--cor-fundo);
     width: 75%;
     height: calc(100vh - 118px);
@@ -132,10 +132,37 @@ main section > div {
 }
 
 main div > article {
-    margin: auto;
+    /* nao tem nada ainda */
+}
+
+main div.home {
     width: 95%;
     height: 500px;
-    background-color: var(--cor-fundo);
+    margin: auto;
+}
+
+main div.social-media {
+    width: 95%;
+    height: 500px;
+    margin: auto;
+}
+
+main div.reviews {
+    width: 95%;
+    height: 500px;
+    margin: auto;
+}
+
+main div.works {
+    width: 95%;
+    height: 500px;
+    margin: auto;
+}
+
+main div.more {
+    width: 95%;
+    height: 500px;
+    margin: auto;
 }
 
 footer {
