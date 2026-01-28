@@ -135,34 +135,40 @@ main div > article {
     /* nao tem nada ainda */
 }
 
-main div.home {
+#articlehome {
     width: 95%;
     height: 500px;
     margin: auto;
+    display: none;
+    
 }
 
-main div.social-media {
+#articlesocial {
     width: 95%;
     height: 500px;
     margin: auto;
+    display: none;
 }
 
-main div.reviews {
+#articlereviews {
     width: 95%;
     height: 500px;
     margin: auto;
+    display: none;
 }
 
-main div.works {
+#articleworks {
     width: 95%;
     height: 500px;
     margin: auto;
+    display: none;
 }
 
-main div.more {
+#articlemore {
     width: 95%;
     height: 500px;
     margin: auto;
+    display: none;
 }
 
 footer {
