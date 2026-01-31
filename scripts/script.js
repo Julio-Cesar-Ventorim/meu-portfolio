@@ -1,3 +1,4 @@
+/*
 const btn = document.querySelectorAll('.botao');
 const articles = document.querySelectorAll(".divclass");
 
@@ -10,3 +11,4 @@ btn.forEach(function(clicarbtn) {
         console.log(event)
     });
 });
+*/
