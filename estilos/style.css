@@ -22,7 +22,13 @@ body {
     background-color: var(--cor-tema);
 }
 
+main {
+    padding-top: 25px;
+}
+
 nav {
+    position: fixed;
+    top: 0;
     background-color: var(--cor-tema-claro);
     height: 50px;
     width: 350px;
@@ -38,10 +44,6 @@ nav > ul {
     list-style: none;
     height: 50px;
     width: auto;
-}
-/* so para sumir com essas imagens mas depois volto */
-img, iframe{
-    display: none; 
 }
 
 div.divclass {
@@ -87,16 +89,17 @@ div.titulo > p {
     font-size: 1.3em;
 }
 
-div.titulo > h1 {
-    
-}
-
 div.titulo {
     margin-bottom: 30px;
 }
 
 div#home h2 {
     background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema) 60%);
+    color: var(--letras-contraste);
+}
+
+div#home p {
+    color: var(--letras-contraste);
 }
 
 div.grid > h2 {
@@ -105,6 +108,27 @@ div.grid > h2 {
     border-radius: 10px;
     margin-bottom: 20px;
     color: var(--letras);
+}
+
+div.grid p {
+    margin-bottom: 50px;
+}
+
+div.video {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-tema-escuro);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.140);
+}
+
+iframe {
+    width: 90%;
+    height: 75%;
 }
 
 
@@ -123,3 +147,4 @@ div#works {
 div#more {
 
 }
+
