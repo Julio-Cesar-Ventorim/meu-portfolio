@@ -72,6 +72,7 @@ div.foto {
     justify-content: center;
     align-items: center;
     background-color: var(--cor-tema-escuro);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.140);
 }
 
 div#titulo img {
@@ -83,15 +84,27 @@ div#titulo img {
 }
 
 div.titulo > p {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 div.titulo > h1 {
-    font-size: 2.5em;
+    font-weight: 900;
 }
 
 div.titulo {
     margin-bottom: 30px;
+}
+
+div#home h2 {
+    background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema) 60%);
+}
+
+div.grid > h2 {
+    background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema-claro) 60%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: var(--letras);
 }
 
 
