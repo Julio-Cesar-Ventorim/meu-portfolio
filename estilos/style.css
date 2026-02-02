@@ -62,7 +62,7 @@ div#titulo {
 div.titulo > p, h1 {
     direction: rtl;
     color: var(--letras-contraste);
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.130);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.140);
 }
 
 div.foto {
@@ -79,11 +79,15 @@ div#titulo img {
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    width: 200px;
+    width: 240px;
 }
 
 div.titulo > p {
     font-size: 1.5em;
+}
+
+div.titulo > h1 {
+    font-size: 2.5em;
 }
 
 div.titulo {
