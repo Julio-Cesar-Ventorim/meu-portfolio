@@ -4,7 +4,7 @@
     --cor-tema-escuro: #305d80;
     --cor-tema: #51C6FC;
     --cor-tema-claro: #96deff;
-    --car-tema-muito-claro: #d8f3ff;
+    --cor-tema-muito-claro: whitesmoke;
     --cor-destaque: #FCAE51;
     --cor-fundo: whitesmoke;
     --letras: #070707;
@@ -20,6 +20,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--cor-tema);
+    margin: 0px;
 }
 
 main {
@@ -27,6 +28,7 @@ main {
 }
 
 nav {
+    z-index: 1000;
     position: fixed;
     top: 0;
     background-color: var(--cor-tema-claro);
@@ -49,12 +51,9 @@ nav > ul {
 div.divclass {
     background-color: var(--cor-tema-claro);
     margin: 20px;
-    padding: 20px;
+    padding-bottom: 1px;
     border-radius: 10px;
-}
-
-div#home {
-    background-color: var(--cor-tema);
+    clip-path: polygon(40% 0, 0 0, 0 100%, 100% 100%, 100% 15%, 50% 15%);
 }
 
 div#titulo {
@@ -82,36 +81,54 @@ div#titulo img {
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    width: 240px;
+    width: 200px;
 }
 
-div.titulo > p {
+div.titulotexto > p {
     font-size: 1.3em;
+    margin-bottom: 10px;
 }
 
-div.titulo {
+div.titulotexto {
+    text-align: right;
     margin-bottom: 30px;
 }
 
+div#home {
+    background-color: var(--cor-tema);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 div#home h2 {
-    background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema) 60%);
+    background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema) 50%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
     color: var(--letras-contraste);
 }
 
 div#home p {
     color: var(--letras-contraste);
+    margin-bottom: 50px;
+}
+
+div.grid {
+    
 }
 
 div.grid > h2 {
-    background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema-claro) 60%);
-    padding: 10px;
-    border-radius: 10px;
+    background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema-claro) 50%);
+    padding: 5px;
+    border-top-left-radius: 10px;
     margin-bottom: 20px;
     color: var(--letras);
 }
 
 div.grid p {
     margin-bottom: 50px;
+    color: var(--letras);
 }
 
 div.video {
@@ -131,9 +148,14 @@ iframe {
     height: 75%;
 }
 
+div.fundo {
+    background-color: var(--cor-tema-muito-claro);
+    margin: 20px;
+    padding: 10px;
+}
 
 div#social {
-
+    
 }
 
 div#reviews {
