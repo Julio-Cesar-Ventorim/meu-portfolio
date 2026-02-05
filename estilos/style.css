@@ -28,25 +28,24 @@ main {
 }
 
 nav {
-    display: flex;
     z-index: 1000;
     position: fixed;
     top: 0;
     background-color: var(--cor-tema-claro);
-    height: 70px;
+    height: 75px;
     width: 350px;
     border-bottom-right-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.123);
 }
 
-nav > ul {
+nav ul {
+    height: 75px;
+    width: 350px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
+    flex-direction: row;
     list-style: none;
-    height: 50px;
-    width: auto;
 }
 
 nav li > a {
@@ -55,8 +54,12 @@ nav li > a {
     padding: 15px;
     border-radius: 10px;
     color: var(--cor-tema-escuro);
-    justify-content: center;
-    align-items: center;
+}
+
+li > a:hover {
+    background-color: var(--cor-tema-escuro);
+    color: var(--cor-destaque);
+    transition: background-color 0.5s, color 0.3s;
 }
 
 div.divclass {

@@ -1,5 +1,4 @@
 /*
-const btn = document.querySelectorAll('.botao');
 const articles = document.querySelectorAll(".divclass");
 
 
@@ -12,3 +11,14 @@ btn.forEach(function(clicarbtn) {
     });
 });
 */
+       
+const btn = document.querySelectorAll('.botao');
+
+btn.forEach(function(botao) {
+    botao.addEventListener("click", event => {
+        event.preventDefault()
+        const secaoId = botao.dataset.secaoid
+        const secao = document.getElementById(secaoId)
+        secao.scrollIntoView({behavior: "smooth"})
+    })
+});
