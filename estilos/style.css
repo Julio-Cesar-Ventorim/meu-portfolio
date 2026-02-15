@@ -17,6 +17,7 @@
     box-sizing: border-box;
 }
 
+/* ------------------------- CSS para celulares ------------------------- */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--cor-tema);
@@ -169,19 +170,49 @@ div.fundo {
     padding: 10px;
 }
 
-div#social {
-    
-}
-
-div#formations {
+/* ------------------------- CSS para tablets ------------------------- */
+@media screen and (min-width: 601px) and (max-width: 900px) {
 
 }
 
-div#works {
+/* ------------------------- CSS para PCs ------------------------- */
+@media screen and (min-width: 901px) {
+    section{
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        grid-template-rows: auto;
+    }
 
+    header {
+        grid-area: 1/1/2;
+    }
+
+    div.divclass {
+        clip-path: polygon(170px 0, 0 0, 0 100%, 100% 100%, 100% 39px, 210px 39px);
+        grid-area: 1/2/3;
+    }
+
+    div#homepc h2 {
+        background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema-claro) 50%);
+        padding: 5px;
+        border-top-left-radius: 10px;
+        margin-bottom: 20px;
+        color: var(--letras);
+    }
+
+    div#social {
+        display: none;
+    }
+
+    div#formations {
+        display: none;
+    }
+
+    div#works {
+        display: none;
+    }
+
+    div#more {
+        display: none;
+    }
 }
-
-div#more {
-
-}
-
