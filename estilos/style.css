@@ -130,10 +130,6 @@ p.home {
     margin-bottom: 50px;
 }
 
-div.grid {
-    
-}
-
 div.video {
     width: auto;
     height: auto;
@@ -170,9 +166,34 @@ div.fundo {
     padding: 10px;
 }
 
+div.fundo p {
+    color: var(--letras);
+    line-height: 1.4em;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+div#homepc {
+    display: none;
+}
+
+footer {
+    background-color: var(--cor-tema-claro);
+    color: var(--letras-contraste);
+    padding: 0.5px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--letras-contraste);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 /* ------------------------- CSS para tablets ------------------------- */
 @media screen and (min-width: 601px) and (max-width: 900px) {
-
+    
 }
 
 /* ------------------------- CSS para PCs ------------------------- */
@@ -182,26 +203,77 @@ div.fundo {
         grid-template-columns: 500px 1fr;
         grid-template-rows: auto;
     }
-
+    
     header {
         grid-area: 1/1/2;
     }
-
+    
+    nav {
+        width: 465px;
+    }
+    
+    nav ul {
+        height: 75px;
+        width: 465px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+    }
+    
     div.divclass {
-        clip-path: polygon(170px 0, 0 0, 0 100%, 100% 100%, 100% 39px, 210px 39px);
+        height: 824px;
+        clip-path: polygon(330px 0, 0 0, 0 100%, 100% 100%, 100% 39px, 370px 39px);
         grid-area: 1/2/3;
+    }
+    
+    div.divclass h2 {
+        padding-left: 20px;
+        background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema-claro) 40%);
+    }
+    
+    div#homepc {
+        display: block;
+    }
+
+    div#homenothing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#homenothing p {
+        font-size: 1.2em;
+        margin-bottom: 50px;
+        color: var(--letras);
+        font-weight: bold;
+    }
+
+    div#homenothing img {
+        height: 60px;
     }
 
     div#homepc h2 {
-        background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-tema-claro) 50%);
         padding: 5px;
+        padding-left: 30px;
         border-top-left-radius: 10px;
         margin-bottom: 20px;
         color: var(--letras);
     }
 
+    div.fundo {
+        height: 745px;
+    }
+
     div#social {
         display: none;
+    }
+
+    div#fundo a {
+        color: var(--letras);
+        text-decoration: none;
     }
 
     div#formations {
@@ -214,5 +286,10 @@ div.fundo {
 
     div#more {
         display: none;
+    }
+
+    footer {
+        width: 469px;
+        border-top-right-radius: 10px;
     }
 }
