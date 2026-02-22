@@ -173,6 +173,24 @@ div.fundo p {
     padding-left: 20px;
 }
 
+div#social a {
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2em;
+    padding: 10px;
+    color: var(--letras);
+}
+
+img.imgilustrativasocial {
+    display: none;
+}
+
+div#social a:hover {
+    color: var(--cor-destaque);
+    transition: color 0.3s;
+}
+
 div#homepc {
     display: none;
 }
@@ -251,10 +269,6 @@ footer a {
         font-weight: bold;
     }
 
-    div#homenothing img {
-        height: 60px;
-    }
-
     div#homepc h2 {
         padding: 5px;
         padding-left: 30px;
@@ -265,15 +279,27 @@ footer a {
 
     div.fundo {
         height: 745px;
+        overflow: scroll;
     }
 
     div#social {
         display: none;
     }
 
-    div#fundo a {
-        color: var(--letras);
+    div#social a {
+        margin-left: 70px;
+        display: block;
         text-decoration: none;
+        font-weight: bolder;
+        font-size: 2em;
+        padding: 10px;
+        color: var(--letras);
+        width: 350px;
+    }
+
+    img.imgilustrativasocial {
+        display: block;
+        height: 400px;
     }
 
     div#formations {
